@@ -39,7 +39,7 @@ function totalSafeSquares() {
     const directions = [[0, 1], [1, 0], [0, -1], [-1, 0]];
     
     // Limit search space to avoid Set size limit
-    const LIMIT = 1000;
+    const LIMIT = 9999;
     
     while (queue.length > 0 && visited.size < LIMIT) {
         const [x, y] = queue.shift();
