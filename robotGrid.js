@@ -99,7 +99,7 @@ function shortestSafeJourney(a, b, x, y) {
     const directions = [[0, 1], [1, 0], [0, -1], [-1, 0]];
     
     // Add search limit to prevent Set size issues
-    const MAX_STEPS = 1000;
+    const MAX_STEPS = 9999;
     
     while (queue.length > 0) {
         const [currX, currY, steps] = queue.shift();
